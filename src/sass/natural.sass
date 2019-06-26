@@ -1,0 +1,16 @@
+.natural
+  background-image: url(../img/natural-bg.jpg)
+  background-size: cover
+  color: #fff
+  .overlay
+    margin-left: auto
+    max-width: 690px
+    width: 100%
+    padding: 260px 250px 260px 55px
+  &__list
+    margin-top: 10px
+    &-item
+      position: relative
+      padding-left: 10px
+      &:before
+        @include li-dotted(5px, 5px)

@@ -1,0 +1,102 @@
+.btn
+  padding: 0
+  color: #fff
+  cursor: pointer
+  transition: 0.3s ease
+  &-fill
+    font-family: $fira
+    font-size: 20px
+    font-weight: 500
+    line-height: 26px
+    background-color: $lightGreen
+    border: 1px solid $lightGreen
+    border-radius: 2px
+    padding: 11px 35px
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25)
+    &:hover
+      background-color: $darkGreen
+      border-color: $darkGreen
+      box-shadow: none
+.btn
+  &-transparent
+    background-color: transparent
+    border-color: transparent
+    position: relative
+    padding: 0
+    line-height: 24px
+    letter-spacing: 0.03em
+    &:hover
+      color: $darkGreen
+.btn-dashed
+  &:after
+    @include dashed-border
+  &:hover
+    color: $lightGreen
+    &:after
+      opacity: 0
+.btn
+  &__join
+    margin-bottom: 30px
+    width: 100%
+  &-green
+    color: $lightGreen
+    &:after
+      border-color: $lightGreen
+  &__phone
+    color: $phoneGreen
+    margin-bottom: 30px
+    &:after
+      border-color: $phoneGreen
+.btn-lang
+  color: $lightGreen
+  &:after
+    border-color: $lightGreen
+  &-active
+    color: #000
+    .btn-transparent__text
+      &:after
+        border-color: transparent
+.btn-slider
+  padding: 0
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  width: 35px
+  height: 45px
+  z-index: 10
+  background-color: transparent
+  border-color: transparent
+  .arrow-icon
+    width: 100%
+    height: 100%
+.btn-play
+  position: relative
+  width: 80px
+  height: 80px
+  border-radius: 50%
+  background-color: $lightGreen
+  border: 1px solid $lightGreen
+  opacity: 0.7
+  transition: 0.3s ease
+  &:hover
+    background-color: $darkGreen
+.btn-scroll-up
+  position: fixed
+  z-index: 100
+  right: 50px
+  bottom: 50px
+  width: 160px
+  height: 135px
+  background-color: rgb(55, 70, 77)
+  border: 1px solid $grey
+  color: #ffffff
+  cursor: pointer
+  display: none
+  &__icon
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    width: 50px
+    height: 50px
+    z-index: 500

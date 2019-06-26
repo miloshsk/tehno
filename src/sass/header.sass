@@ -1,0 +1,49 @@
+.page-header
+  position: relative
+  height: 100vh
+  background-image: url(../img/header-bg.jpg)
+  background-size: cover
+  text-align: center
+  .overlay
+    height: 100%
+    background-color: rgba(255, 255, 255, 0.7)
+.header__centering
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  .btn-play
+    margin-bottom: 15px
+.header-logo
+  max-width: 212px
+  height: 110px
+  width: 100%
+  margin: 0 auto
+.lang-switcher
+  position: absolute
+  top: 35px
+  right: 50px
+  &__item
+    display: inline-block
+.triangle-icon
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  width: 25px
+  height: 30px
+.scroll
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 40px
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__icon
+    width: 25px
+    height: 35px
+  &__text
+    font-size: 14px
+    line-height: 19px
+    color: $grey

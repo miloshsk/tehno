@@ -1,0 +1,29 @@
+.placement
+  background-image: url(../img/placement-bg.jpg)
+  background-size: cover
+  color: #fff
+  .overlay
+    max-width: 690px
+    width: 100%
+    padding-left: 250px
+    padding-top: 120px
+    padding-bottom: 120px
+  &__list
+    margin: 10px 0
+    &-group
+      margin-bottom: 40px
+    &-item
+      position: relative
+      padding-left: 10px
+      &:before
+        @include li-dotted(5px, 5px)
+  &__item
+    padding-left: 85px
+    position: relative
+    &-icon
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      width: 70px
+      height: 70px

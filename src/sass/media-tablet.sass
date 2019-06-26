@@ -1,0 +1,179 @@
+@media only screen and (max-width: 991px)
+  .burger
+    display: block
+  .content
+    transition: 0.3s ease
+    margin-left: 0
+  .menu
+    z-index: 100
+    transform: translateX(-100%)
+    transition: 0.3s ease
+    &__logo
+      margin: 0
+  .menu-active
+    transform: translateX(0)
+  .page__logo-wrapper
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    text-align: center
+    background-color: $darkBlue
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100px
+    padding: 0
+  .page-header
+    margin-top: 100px
+    height: auto
+    .overlay
+      padding-top: 230px
+      padding-bottom: 190px
+  .lang-switcher
+    left: 50%
+    transform: translateX(-50%)
+  .scroll
+    display: none
+
+
+  .about__item
+    width: 49%
+  .business
+    &__wrapper
+      flex-direction: column
+    .slider
+      width: 100%
+      margin-bottom: 70px
+      .slider-for__img-wrapper
+        img
+          width: 100%
+    &__list-item
+      width: 33%
+      text-align: center
+    &__wrapper
+      flex-direction: column
+    .slider-nav
+      .slick-slide
+        width: 125px
+        height: 70px
+        margin: 0 10px
+
+  .location
+    background-image: url(../img/location-tablet-bg.jpg)
+    padding-bottom: 1200px
+    &__text-wrapper
+      text-align: center
+      h2
+        text-align: center
+    &__wrapper
+      flex-direction: column
+      text-align: center
+    &__text
+      padding: 0
+    &__info
+      max-width: 100%
+      top: 850px
+    &__overlay
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      padding: 40px 120px
+    &__item
+      width: 45%
+      text-align: left
+  .markets
+    &__content
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      max-width: 100%
+      margin-top: 0
+      margin-bottom: 70px
+      &-info
+        width: 100%
+  .infrastructure__item
+    width: 50%
+    text-align: center
+
+  .placement
+    .overlay
+      max-width: 430px
+      padding: 180px 30px
+    &__item
+      display: none
+  .service
+    &__list
+      display: flex
+      flex-wrap: wrap
+      padding-top: 40px
+      &:before
+        display: none
+      &-item
+        max-width: 50%
+        text-align: center
+        margin-bottom: 50px
+        &:nth-child(even)
+          margin: 0
+    &__features
+      flex-wrap: wrap
+      &-item
+        width: 50%
+
+  .workforce
+    background-image: url(../img/workforce-tablet-bg.jpg)
+    .overlay
+      max-width: 430px
+      padding: 260px 30px
+      margin-left: auto
+  .natural
+    .overlay
+      max-width: 430px
+      padding: 260px 30px
+      margin: 0
+
+  .privileges
+    &__info
+      padding: 0
+    &__list-item
+      width: 50%
+      text-align: center
+    &__icon
+      left: 50%
+      transform: translateX(-50%)
+
+  .investments__slider
+    padding: 0 60px
+  .investments__slider-item
+    max-width: 275px
+
+  .company
+    flex-direction: column
+    .overlay-left
+      height: 485px
+    .overlay-right
+      padding: 100px 30px
+    &__content
+      max-width: 100%
+    &__info-item
+      max-width: 33%
+
+  .news__slider
+    padding: 0 50px
+    .arrow-prev
+      left: 0
+    .arrow-next
+      right: 0
+
+  .contacts
+    &__content
+      padding: 0
+    &__form-wrapper
+      position: relative
+      max-width: 100%
+      .btn
+        width: 150px
+        font-size: 16px
+    &__social
+      margin-bottom: 70px

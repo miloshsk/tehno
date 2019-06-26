@@ -1,0 +1,40 @@
+.about
+  background-image: url(../img/about-bg.jpg)
+  background-size: cover
+  position: relative
+  &__list
+    padding-top: 20px
+    margin-bottom: 70px
+    display: flex
+    flex-wrap: wrap
+  &__item
+    text-align: center
+    width: 33%
+    padding: 0 5px
+  &__number
+    font-family: $fira
+    font-size: 50px
+    line-height: 60px
+    font-weight: 500
+  .slider
+    max-width: 960px
+    width: 100%
+    margin: 0 auto
+    padding: 0 20px
+    &-for
+      position: relative
+      margin-bottom: 15px
+      &__img-wrapper
+        img
+          height: 550px
+      .arrow-prev
+        opacity: 0.5
+        left: 15px
+      .arrow-next
+        opacity: 0.5
+        right: 15px
+.slider-nav
+  .slick-slide
+    width: 180px
+    height: 100px
+    margin: 0 10px

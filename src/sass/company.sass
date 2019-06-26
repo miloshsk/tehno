@@ -1,0 +1,48 @@
+.company
+  background-image: url(../img/company-bg.jpg)
+  background-size: cover
+  display: flex
+  &__icon
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+  &__content
+    max-width: 570px
+    width: 100%
+  .overlay-left
+    position: relative
+    width: 100%
+    height: auto
+    overflow: hidden
+  .overlay-right
+    margin-left: auto
+    background-color: rgba(55, 70, 77, 0.85)
+    max-width: 920px
+    width: 100%
+    padding: 70px 0 100px 100px
+    color: #fff
+    .btn
+      margin-top: 20px
+      margin-bottom: 40px
+    h2
+      text-align: left
+    .company__list
+      li
+        padding-left: 10px
+        position: relative
+        &:before
+          @include li-dotted(5px, 5px)
+  &__info
+    &-item
+      max-width: 155px
+      width: 100%
+      margin-right: 30px
+    &-list
+      display: flex
+    &-number
+      font-family: $fira
+      font-weight: 500
+      font-size: 50px
+      line-height: 60px
+      color: $phoneGreen

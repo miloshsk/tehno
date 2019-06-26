@@ -1,0 +1,38 @@
+.news
+  background-image: url(../img/news-bg.jpg)
+  background-size: cover
+  &__slider
+    margin-top: 100px
+    padding: 0 40px
+    .arrow-prev
+      left: 0
+      opacity: 0.5
+    .arrow-next
+      right: 0
+      opacity: 0.5
+    &-item
+      position: relative
+      max-width: 345px
+      height: 515px
+      width: 100%
+      margin: 0 20px
+      color: #fff
+      background-color: $grey
+      h4
+        transition: 0.3s ease
+      &:hover
+        h4
+          color: $phoneGreen
+    &-date
+      display: block
+      margin: 10px 0
+    &-content
+      padding-left: 20px
+      padding-right: 20px
+      padding-bottom: 40px
+    &-icon
+      position: absolute
+      width: 20px
+      height: 15px
+      bottom: 15px
+      left: 20px

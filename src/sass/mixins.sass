@@ -1,0 +1,21 @@
+@mixin dashed-border
+  content: ''
+  display: block
+  opacity: 0.7
+  position: absolute
+  bottom: -2px
+  left: 0
+  right: 0
+  height: 0
+  border-bottom: 1px dashed #fff
+  transition: 0.3s ease
+@mixin li-dotted($width, $height)
+  content: ''
+  display: block
+  position: absolute
+  left: 0
+  top: 50%
+  transform: translateY(-50%) rotate(45deg)
+  width: $width
+  height: $height
+  background-color: $phoneGreen
